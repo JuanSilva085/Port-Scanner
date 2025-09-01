@@ -3,7 +3,7 @@
 ## Descrição
 
 Este projeto implementa um port scanner simples em Python utilizando a biblioteca padrão socket.
-O objetivo é demonstrar conceitos básicos de redes e segurança da informação, permitindo identificar se determinadas portas em um host estão abertas ou fechadas.
+O objetivo é demonstrar conceitos básicos de redes e segurança da informação, permitindo identificar se determinadas portas em um host estão abertas ou fechadas. Também foi adicionado o registro de logse alertas para portas críticas(alertas.log). 
 
 
 ## Funcionalidades
@@ -12,8 +12,7 @@ Escaneamento de portas TCP específicas.
 
 Retorno indica se a porta está aberta ou fechada.
 
-Configuração simples, sem dependências externas.
-
+Alertas para portas críticas (alertas.log).
 
 
 ## Detalhes técnicos – Import socket
@@ -28,6 +27,15 @@ connect((ip, port)): tenta estabelecer uma conexão.
 
 close(): encerra e libera os recursos do socket.
 
+## Arquivo log
+
+Os registros incluem a data e hora.
+
+Portas críticas abertas geram alertas no alertas.log.
+
+
 ## Referência / Documentação
 
-Módulo socket (Python): Fornece acesso à interface de soquete BSD. https://docs.python.org/3/library/socket.html
+Módulo socket (Python): Fornece acesso à interface de soquete BSD. 
+socket: https://docs.python.org/3/library/socket.html
+datetime: https://docs.python.org/3/library/datetime.html
