@@ -14,6 +14,8 @@ Retorno indica se a porta está aberta ou fechada.
 
 Alertas para portas críticas (alertas.log).
 
+<img width="293" height="203" alt="img-scanner" src="https://github.com/user-attachments/assets/aa5ad733-10d6-425f-822f-9d5cf740df7c" />
+
 
 ## Detalhes técnicos – Import socket
 
