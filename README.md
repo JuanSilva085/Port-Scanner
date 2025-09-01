@@ -37,5 +37,6 @@ Portas críticas abertas geram alertas no alertas.log.
 ## Referência / Documentação
 
 Módulo socket (Python): Fornece acesso à interface de soquete BSD. 
+
 socket: https://docs.python.org/3/library/socket.html
 datetime: https://docs.python.org/3/library/datetime.html

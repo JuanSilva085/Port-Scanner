@@ -13,9 +13,9 @@ def scan_porta(ip, port):
   finally:
     sock.close()
 #log
-def registrar_log(mensage):
+def registrar_log(mensagem):
   with open("alertas.log", "a") as log:
-    log.write(mensage + "\n")
+    log.write(mensagem + "\n")
 
 def main():
   target = input("Digite o IP:")
@@ -26,13 +26,13 @@ def main():
   print(f"Escaneando... {target}")
   for port in portas_scan:
     if scan_porta(target, port):
-      mesage = f"[{datetime.datetime.now()}] A porta {port} está aberta no endereço IP: {target}" #aqui podemos ver data e hora que a porta foi encontrada
-      print(mesage)
+      mensagem = f"[{datetime.datetime.now()}] A porta {port} está aberta no endereço IP: {target}" #aqui podemos ver data e hora que a porta foi encontrada
+      print(mensagem)
       
       #guardar na lista
       portas_abertas.append(port)
       #escrever no log
-      registrar_log(mesage)
+      registrar_log(mensagem)
 
       #verificar se a porta é crítica ou não
       if port in [22, 23]:
